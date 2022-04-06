@@ -1,0 +1,19 @@
+{
+  "name": "content-size",
+  "version": "1.0.0",
+  "description": "get available width and height of html element",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zyzbbb/content-size.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zyzbbb/content-size/issues"
+  },
+  "homepage": "https://github.com/zyzbbb/content-size#readme"
+}
