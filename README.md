@@ -1,6 +1,6 @@
 # content-size
 
-> get available width and height of html element
+## get avaliable width and height of html element
 
 ## What's it?
 
@@ -12,14 +12,40 @@ But cause of css box model,the element's size contains
 
 borderWidth,paddding and content size.
 
-for example,
 
+```
 clientWidth = borderLeftWidth + borderRightWidth + paddingLeft + paddingRight + contentWidth
-
+````
 Actually,we just care about the contentWidth.
 
 So that is this cute tools what to do.
 
-### getContentSize(el: HTMLElement):{width:number,height:number}
+## API
 
-### getStyle(el: HTMLElement, pseudoElt: string | null = null): (name: string) => string
+### getContentSize
+```
+const el = document.getElementById('app');
+const rect = getContentSize(el);
+console.log(rect);
+
+// output
+// {width:100,height:300}
+```
+
+### getStyle
+```
+const el = document.getElementById('app');
+const style = getStyle(el);
+
+// css width
+const width = style('width');
+
+// css background-color
+const backgroundColor = style('background-color');
+
+// pseudo element
+const pseudoStyle = getStyle(el,':after');
+
+// width
+const width = pseudoStyle('width');
+```
